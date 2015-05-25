@@ -1,0 +1,27 @@
+.top-bar
+  @media #{$small-up}
+    padding: ($column-gutter / 2)
+
+  .count
+    display: inline-block
+    background: $primary-color
+    border-radius: $global-radius
+    line-height: 1rem
+    padding: 3px 6px 2px
+    color: #dddddf
+
+.top-bar-section
+  li
+    padding: 0 ($topbar-height / 3)
+
+    &.active, &:hover
+      a:not(.button)
+        border-bottom: 3px solid $primary-color
+
+    &.name
+      a:not(.button)
+        // padding: 0 ($topbar-height / 3)
+        // border: 3px solid $primary-color
+        color: $primary-color
+        font-size: 0.8125rem
+        font-family: $nevis

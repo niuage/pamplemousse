@@ -1,0 +1,129 @@
+// html
+//   @media #{$medium-up}
+//     background: #bfbfbf
+//     padding: 1em
+
+#page
+  background: #dddddf
+  // box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
+
+#header
+  padding-top: 8em
+
+  h1, h3
+    font-family: $nevis
+
+  h1
+    font-size: 6.5em
+    color: $primary-color
+    margin-bottom: 3rem
+
+  h3
+    color: $secondary-color
+    position: relative
+    margin: 0
+    margin-bottom: 1.5em
+
+    &:after
+      content: ""
+      position: absolute
+      bottom: -13px
+      left: 0
+      width: 1em
+      height: 3px
+      background: $secondary-color
+
+  p
+    color: $monsoon
+
+#header-model
+  @media #{$medium-up}
+    margin-top: -17em
+
+.author
+  font-style: italic
+  font-family: $font-family-serif
+  font-size: 0.825em
+
+.icon-checkout
+  font-size: 1.1rem
+  position: relative
+  top: 1px
+  line-height: 0.825em
+
+#line-2
+  background: image-url("pink_bg.png") no-repeat center top
+
+#line-1-model
+  background: image-url("line_1.png") no-repeat right bottom
+
+#line-2-model
+  padding-top: 6em
+
+  background: image-url("line_2.png") no-repeat left bottom
+
+.line
+  background-color: #E3898F
+  height: 20em
+  position: absolute
+  top: 0
+  left: 2%
+  width: 96%
+  transform: rotate(-4deg)
+  margin-top: -1em
+
+.line-1
+  background: #88C8C6
+  //#a8c3c2
+
+.line-2
+  background: #C88897
+  //#D2A9AD
+  transform: rotate(4deg)
+
+.line-3
+  background: #4F82C8
+  //#7697c4
+  transform: rotate(-4deg)
+
+.linesheet
+  padding: 6em 0 6em
+  position: relative
+  min-height: 680px
+
+  h2
+    padding-top: 1em
+    color: white
+    font-size: 2em
+    text-transform: uppercase
+    margin: 0
+    padding-bottom: 1em
+
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      height: 4px
+      width: 1em
+      background: white
+
+  .fake-column
+    margin-left: ($column-gutter / 2)
+
+  p.quote
+    padding-top: 25px
+    font-size: 2em
+    color: $primary-color
+
+  .button
+    background: transparent
+    border: 3px solid white
+    color: white
+    text-transform: uppercase
+
+.about-line
+  padding-top: 2em
+
+  p
+    font-size: 0.875em
+    color: #525252
