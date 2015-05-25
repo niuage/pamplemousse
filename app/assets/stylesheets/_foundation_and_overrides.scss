@@ -104,10 +104,10 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
+$smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
-// $base        : #AAAAAA;
+$base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
 $monsoon     : #777777;
@@ -127,7 +127,7 @@ $secondary-color: #2237d8;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
+$body-bg: #e2e2e2;
 $body-font-color: $oil;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -427,8 +427,8 @@ $header-font-family: $nevis;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
+$button-tny: rem-calc(4);
+$button-sml: rem-calc(8);
 $button-med: rem-calc(12);
 // $button-lrg: rem-calc(18);
 

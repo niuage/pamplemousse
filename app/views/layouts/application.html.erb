@@ -12,9 +12,10 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body class="<%= body_classes %>">
 
     <div id="page">
+      <%= render "layouts/nav" %>
       <%= yield %>
     </div>
 

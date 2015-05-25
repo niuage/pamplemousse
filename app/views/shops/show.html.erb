@@ -1,0 +1,58 @@
+<div id="slash"></div>
+
+<div id="shop">
+  <nav class="sidebar">
+    <ul class="no-bullet">
+      <li class="active">
+        <%= link_to "" do %>
+          <span>A</span> All
+        <% end %>
+      </li>
+
+      <li>
+        <%= link_to "" do %>
+          <span>Sh</span>
+          Shirts
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "" do %>
+          <span>Pa</span>
+          Pants
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "" do %>
+          <span>To</span>
+          Tops
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "" do %>
+          <span>Dr</span>
+          Dresses
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "" do %>
+          <span>Sk</span>
+          Skirts
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="gallery">
+    <div class="large-12 columns">
+      <div id="header">
+        <h1>Shop <span>/ Pre-spring 2016 collection</span></h1>
+      </div>
+    </div>
+    <div class="ro">
+    <% 1.upto(8) do %>
+      <%= render "products/product" %>
+    <% end %>
+    <div class="columns"></div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-<%= render "layouts/nav" %>
-
 <%= render "home/header" %>
+
+<% images = ["1", "2", "3"] %>
 
 <div id="line-1" class="linesheet">
   <div class="line line-1"></div>
@@ -11,21 +11,15 @@
         shop now
       </a>
     </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/1.png" %>
+    <% 1.upto(3) do %>
+      <div class="medium-3 columns">
+        <div class="product">
+          <div class="content">
+            <%= image_tag "products/#{cycle(*images, name: "line1")}.png" %>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/2.png" %>
-      </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/3.png" %>
-      </div>
-    </div>
+    <% end %>
   </div>
   <div class="row collapse">
     <div class="medium-3 columns">
@@ -48,21 +42,17 @@
 <div id="line-1" class="linesheet">
   <div class="line line-2"></div>
   <div class="row collapse">
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/1.png" %>
+
+    <% 1.upto(3) do %>
+      <div class="medium-3 columns">
+        <div class="product">
+          <div class="content">
+            <%= image_tag "products/#{cycle(*images, name: "line2")}.png" %>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/2.png" %>
-      </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/3.png" %>
-      </div>
-    </div>
+    <% end %>
+
     <div class="medium-3 columns">
       <div class="fake-column">
         <h2 class="title-right">Pample<br>Mousse</h2>
@@ -98,21 +88,15 @@
         shop now
       </a>
     </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/1.png" %>
+    <% 1.upto(3) do %>
+      <div class="medium-3 columns">
+        <div class="product">
+          <div class="content">
+            <%= image_tag "products/#{cycle(*images, name: "line3")}.png" %>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/2.png" %>
-      </div>
-    </div>
-    <div class="medium-3 columns">
-      <div class="product">
-        <%= image_tag "products/3.png" %>
-      </div>
-    </div>
+    <% end %>
   </div>
   <div class="row collapse">
     <div class="medium-3 columns">

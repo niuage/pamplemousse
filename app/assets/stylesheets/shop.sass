@@ -1,0 +1,65 @@
+#shop
+  position: relative
+  z-index: 2
+
+.c-shops
+  .sidebar
+    @media #{$medium-up}
+      float: left
+      width: 200px
+      padding-top: 16.2em
+
+    ul
+      li
+        padding: 0.6em 0 0.6em $column-gutter
+
+        @media #{$medium-up}
+          margin-bottom: 0.4em
+
+        &.active
+          background: #BFD4D5
+
+          a
+            color: white
+
+            span
+              color: white
+              border-color: white
+
+        a
+          line-height: 26px
+          color: $oil
+
+        span
+          margin-right: 3px
+          text-align: center
+          display: inline-block
+          font-family: $nevis
+          border: 1px solid $primary-color
+          color: $primary-color
+          width: 30px
+
+  .gallery
+    @media #{$medium-up}
+      margin-left: 220px
+
+  .product
+    max-width: 280px
+    margin-bottom: 2em
+
+    img
+      width: 100%
+
+  #header
+    padding-top: 4em
+
+  #slash
+    @media #{$medium-up}
+      width: 50px
+      height: 1000px
+      background: #BFD4D5
+      position: absolute
+      transform: rotate(22deg)
+      left: 50%
+      top: -210px
+      z-index: 1

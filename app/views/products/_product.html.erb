@@ -1,0 +1,7 @@
+<% images = ["1", "2", "3"] %>
+
+<div class="product medium-3 columns">
+<div class="">
+  <%= image_tag "products/#{cycle(*images, name: "images")}.png" %>
+</div>
+</div>

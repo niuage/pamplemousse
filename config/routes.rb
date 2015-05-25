@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root to: "home#index"
+  devise_for :users
+  root to: 'home#index'
+
+  get 'shop', to: 'shops#show'
 end

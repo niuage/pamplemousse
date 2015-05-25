@@ -1,0 +1,23 @@
+.button
+  &.border-button
+    background: transparent
+    border: 2px solid white
+    color: white
+
+    &.primary
+      border-color: $primary-color
+      color: $primary-color
+
+    &.secondary
+      border-color: $secondary-color
+      color: $secondary-color
+
+    &.faded
+      @include transition(none)
+      border-color: #ccc
+      color: #ccc
+
+      &:hover
+        background: $base
+        border-color: $base
+        color: $body-bg

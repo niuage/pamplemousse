@@ -4,7 +4,7 @@
 //     padding: 1em
 
 #page
-  background: #dddddf
+  background: $body-bg
   // box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
 
 #header
@@ -17,6 +17,10 @@
     font-size: 6.5em
     color: $primary-color
     margin-bottom: 3rem
+
+    span
+      font-size: 2rem
+      color: $secondary-color
 
   h3
     color: $secondary-color
@@ -87,7 +91,7 @@
   transform: rotate(-4deg)
 
 .linesheet
-  padding: 6em 0 6em
+  padding: 5em 0 6em
   position: relative
   min-height: 680px
 
@@ -127,3 +131,26 @@
   p
     font-size: 0.875em
     color: #525252
+
+#header-nav
+  a
+    font-size: 2em
+    position: absolute
+    top: 47%
+    left: 0px
+
+    &.nav-left
+      border-left-width: 0
+
+    &.nav-right
+      left: auto
+      right: 0px
+      border-right-width: 0
+
+      i
+        left: 2px
+
+  i
+    position: relative
+    top: 4px
+    left: -2px

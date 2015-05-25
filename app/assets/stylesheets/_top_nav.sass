@@ -1,6 +1,8 @@
 .top-bar
+  z-index: 10000
+
   @media #{$small-up}
-    padding: ($column-gutter / 2)
+    margin: ($column-gutter / 2)
 
   .count
     display: inline-block
@@ -8,7 +10,7 @@
     border-radius: $global-radius
     line-height: 1rem
     padding: 3px 6px 2px
-    color: #dddddf
+    color: $body-bg
 
 .top-bar-section
   li
