@@ -1,7 +1,7 @@
 <% images = ["1", "2", "3"] %>
 
-<div class="product medium-3 columns">
-<div class="">
-  <%= image_tag "products/#{cycle(*images, name: "images")}.png" %>
-</div>
+<% sizes = [3, 3, 6, 6, 3, 3] %>
+
+<div class="product medium-<%= cycle(*sizes) %> columns">
+  <div style="background: url(<%= image_path "products/#{cycle(*images, name: "images")}.png" %>) no-repeat; background-size: cover;"></div>
 </div>

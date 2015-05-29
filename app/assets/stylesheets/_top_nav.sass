@@ -2,15 +2,14 @@
   z-index: 10000
 
   @media #{$small-up}
-    margin: ($column-gutter / 2)
+    margin: ($column-gutter / 2) 0
 
   .count
     display: inline-block
-    background: $primary-color
+    border: 1px solid $primary-color
     border-radius: $global-radius
     line-height: 1rem
-    padding: 3px 6px 2px
-    color: $body-bg
+    padding: 1px 4px 0px
 
 .top-bar-section
   li
@@ -21,9 +20,11 @@
         border-bottom: 3px solid $primary-color
 
     &.name
+      padding: 0
+
       a:not(.button)
         // padding: 0 ($topbar-height / 3)
         // border: 3px solid $primary-color
         color: $primary-color
-        font-size: 0.8125rem
+        font-size: 1rem
         font-family: $nevis
